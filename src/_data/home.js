@@ -62,10 +62,10 @@ module.exports = {
     role: "Founder & Managing Attorney, UOA Legal",
     image: "/assets/images/founder-portrait.jpg",
     paragraphs: [
-      "Udoka ‘Frank’ Amah founded UOA Legal to help businesses make important decisions with greater clarity and confidence.",
-      "He advises organizations across industries, from emerging companies to established government contractors, on legal issues that affect growth, risk, operations, and long-term value.",
-      "His approach combines legal judgment, commercial awareness, and practical direction. The focus is not simply on explaining the law, but on helping clients understand their options, anticipate consequences, and move forward with confidence.",
-      "How he thinks about the work: map the commercial objective first, then design the legal path that protects it — including second-order regulatory, litigation, and mobility risks that most single-lane counsel miss.",
+      "Udoka “Frank” Amah founded UOA Legal because most businesses don’t need more legal explanation — they need a clearer path to a decision.",
+      "He advises organizations from early-stage companies to established government contractors, on the legal issues that actually move the needle: growth, risk, operations, and long-term value.",
+      "He doesn’t just tell clients what the law says. He tells them what it means for the decision in front of them — what it opens up, what it closes off, and what happens three moves later if they get it wrong.",
+      "His method: start with the commercial objective, then build the legal structure around it — one that holds up against the risks most single-lane counsel never see coming, across regulatory exposure, litigation, and cross-border mobility.",
     ],
   },
 };
