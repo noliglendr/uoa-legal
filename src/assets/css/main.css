@@ -350,7 +350,7 @@ ol {
 .hero {
   position: relative;
   min-height: min(88vh, 760px);
-  display: flex;
+  display: grid;
   align-items: center;
   color: var(--white);
   overflow: hidden;
@@ -386,9 +386,12 @@ ol {
     );
 }
 
-.hero-content {
+/* Full-width wrap so left edge matches nav + sections below */
+.hero > .wrap.hero-content {
   position: relative;
   z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
   padding-top: 96px;
   padding-bottom: 96px;
   text-align: left;
@@ -397,26 +400,26 @@ ol {
 .hero h1 {
   font-family: var(--font-serif);
   font-weight: 500;
-  font-size: clamp(40px, 5vw, 56px);
-  max-width: 680px;
-  width: 100%;
-  line-height: 1.15;
-  margin-bottom: 24px;
+  font-size: clamp(40px, 4.8vw, 58px);
+  max-width: min(820px, 100%);
+  line-height: 1.14;
+  margin: 0 0 24px;
   letter-spacing: -0.01em;
 }
 
 .hero-lede {
-  max-width: 560px;
+  max-width: min(640px, 100%);
   color: rgba(255, 255, 255, 0.9);
   font-size: clamp(15px, 1.25vw, 17px);
   line-height: 1.65;
-  margin-bottom: 36px;
+  margin: 0 0 36px;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+  justify-content: flex-start;
 }
 
 .hero .btn {
