@@ -21,10 +21,10 @@ module.exports = {
     },
   ],
   stats: [
-    { value: "15+", label: "Years Experience" },
-    { value: "200+", label: "Businesses Advised" },
-    { value: "12", label: "Countries Served" },
-    { value: "6", label: "Practice Areas" },
+    { value: "20+", label: "Years of Legal Expertise" },
+    { value: "300+", label: "Businesses Advised" },
+    { value: "18", label: "Countries Served" },
+    { value: "8", label: "Practice Areas" },
   ],
   // Intentionally empty until real, consented client quotes are available.
   testimonials: [],
