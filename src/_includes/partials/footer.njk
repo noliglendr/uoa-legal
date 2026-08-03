@@ -1,12 +1,62 @@
-<footer>
-  <div class="wrap">
-    <div class="foot-top">
-      <div>{{ site.name }}</div>
-      <div>{{ site.location }} &nbsp;&middot;&nbsp; <a href="{{ site.url }}">uoalegal.com</a></div>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo" aria-label="UOA Legal home">
+        <img src="/assets/logo.svg" alt="" width="56" height="56" />
+      </a>
+      <p>{{ site.tagline }}</p>
     </div>
-    <div class="disclaimer">
-      {{ site.disclaimer }}
-      <div class="tagline">{{ site.tagline }}</div>
+
+    <div>
+      <h3 class="footer-heading">Navigate</h3>
+      <ul class="footer-links">
+        <li><a href="/#practice">Practice Areas</a></li>
+        <li><a href="/#why">Why UOA Legal</a></li>
+        <li><a href="/#insights">Insights</a></li>
+      </ul>
     </div>
+
+    <div>
+      <h3 class="footer-heading">Connect</h3>
+      <ul class="footer-links">
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="{{ site.linkedin }}" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+        <li><a href="/contact/">Newsletter</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="footer-heading">Locations</h3>
+      <ul class="footer-links">
+        {% for loc in site.locations %}
+        <li>{{ loc }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="footer-heading">Contact</h3>
+      {% for office in site.offices %}
+      <p class="footer-office">
+        <span class="footer-office-label">{{ office.label }}</span>
+        {% for line in office.lines %}{{ line }}{% if not loop.last %}<br />{% endif %}{% endfor %}
+      </p>
+      {% endfor %}
+      <p class="footer-contact-lines">
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+        <a href="{{ site.phoneHref }}">{{ site.phone }}</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 {{ site.name }}. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+    </div>
+  </div>
+  <div class="wrap footer-disclaimer">
+    <p>{{ site.disclaimer }}</p>
   </div>
 </footer>

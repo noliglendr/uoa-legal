@@ -21,9 +21,10 @@ navCurrent: contact
         <p>Tell us about your matter. We'll tell you honestly whether we're the right firm for it — and if we are, how we'd approach it.</p>
 
         <div style="margin-top:32px;">
-          <div class="contact-detail"><strong>Office</strong>{{ site.location }}</div>
-          <div class="contact-detail"><strong>Web</strong>uoalegal.com</div>
-          <div class="contact-detail"><strong>Phone</strong><a href="tel:{{ site.phone }}">{{ site.phone }}</a></div>
+          {% for office in site.offices %}
+          <div class="contact-detail"><strong>{{ office.label }}</strong>{% for line in office.lines %}{{ line }}{% if not loop.last %}<br />{% endif %}{% endfor %}</div>
+          {% endfor %}
+          <div class="contact-detail"><strong>Phone</strong><a href="{{ site.phoneHref }}">{{ site.phone }}</a></div>
           <div class="contact-detail"><strong>Email</strong><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
         </div>
       </div>
@@ -49,7 +50,7 @@ navCurrent: contact
             <label for="message">How can we help?</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit" class="btn" style="width:100%;">Schedule a Consultation</button>
+          <button type="submit" class="btn btn-dark" style="width:100%;">Schedule a Consultation</button>
           <p class="form-note">Prefer to talk directly? Call or email using the details at left.</p>
         </form>
       </div>
