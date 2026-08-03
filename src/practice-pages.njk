@@ -1,0 +1,43 @@
+---
+pagination:
+  data: practices
+  size: 1
+  alias: practice
+permalink: "/practice-{{ practice.slug }}/"
+layout: layouts/base.njk
+navCurrent: practice
+eleventyComputed:
+  title: "{{ practice.title }} — UOA Legal"
+  description: "{{ practice.lede | truncate(155) }}"
+---
+<header class="page-hero">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="/#practice">Practice Areas</a> &nbsp;/&nbsp; {{ practice.title }}</p>
+    <div class="idx">{{ practice.idx }} — Practice Area</div>
+    <h1>{{ practice.title }}</h1>
+    <hr class="gold-rule" />
+    <p class="lede">{{ practice.lede }}</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">What We Protect</p>
+    <h2 class="section-title">{{ practice.sectionTitle }}</h2>
+    <ul class="protect-list">
+      {% for item in practice.protectList %}
+      <li><span class="mark">—</span><span>{{ item }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include "partials/related-practices.njk" %}
+
+<section class="final-cta">
+  <div class="wrap">
+    <h2>Your next move is a conversation.</h2>
+    <p>The consultation is where strategy begins. Not after you've retained us — at the first conversation.</p>
+    <a href="/contact/" class="btn">Schedule a Consultation</a>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+{% if practice.related and practice.related.length %}
+<section class="related-strip">
+  <div class="wrap">
+    <p class="eyebrow">Related Practice Areas</p>
+    <div class="related-grid">
+      {% for slug in practice.related %}
+        {% for p in practices %}
+          {% if p.slug == slug %}
+          <div class="related-card">
+            <h3>{{ p.title }}</h3>
+            <a href="/practice-{{ p.slug }}/">View Practice Area &rarr;</a>
+          </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

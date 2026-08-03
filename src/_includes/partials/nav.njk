@@ -1,0 +1,21 @@
+<nav>
+  <div class="wrap">
+    <a href="/" class="brand">UOA Legal</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="navlinks" id="navlinks">
+      {% if page.url == "/" %}
+      <a href="#about">About</a>
+      <a href="#practice">Practice Areas</a>
+      <a href="#serve">Who We Serve</a>
+      <a href="#contact">Contact</a>
+      {% else %}
+      <a href="/about/"{% if navCurrent == "about" %} class="current"{% endif %}>About</a>
+      <a href="/#practice"{% if navCurrent == "practice" %} class="current"{% endif %}>Practice Areas</a>
+      <a href="/who-we-serve/"{% if navCurrent == "serve" %} class="current"{% endif %}>Who We Serve</a>
+      <a href="/contact/"{% if navCurrent == "contact" %} class="current"{% endif %}>Contact</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>
