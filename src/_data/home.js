@@ -58,11 +58,11 @@ module.exports = {
     },
   ],
   founder: {
-    name: "Udoka Amah",
+    name: "Udoka ‘Frank’ Amah",
     role: "Founder & Managing Attorney, UOA Legal",
     image: "/assets/images/founder-portrait.jpg",
     paragraphs: [
-      "Udoka Amah founded UOA Legal to help businesses make important decisions with greater clarity and confidence.",
+      "Udoka ‘Frank’ Amah founded UOA Legal to help businesses make important decisions with greater clarity and confidence.",
       "He advises organizations across industries, from emerging companies to established government contractors, on legal issues that affect growth, risk, operations, and long-term value.",
       "His approach combines legal judgment, commercial awareness, and practical direction. The focus is not simply on explaining the law, but on helping clients understand their options, anticipate consequences, and move forward with confidence.",
       "How he thinks about the work: map the commercial objective first, then design the legal path that protects it — including second-order regulatory, litigation, and mobility risks that most single-lane counsel miss.",
