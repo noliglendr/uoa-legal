@@ -645,7 +645,7 @@ ol {
 
 .stats-row {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -765,7 +765,6 @@ ol {
   max-height: 640px;
   object-fit: cover;
   object-position: center top;
-  filter: grayscale(1);
 }
 
 .founder-name {
@@ -822,9 +821,18 @@ ol {
   margin-bottom: 10px;
 }
 
+.insight-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .insight-card h3 {
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+.insight-card .text-link {
+  margin-top: 18px;
 }
 
 /* ==========================================================================
@@ -1048,6 +1056,8 @@ ol {
 .bio-avatar {
   width: 120px;
   height: 120px;
+  object-fit: cover;
+  object-position: center top;
   background: var(--cream-deep);
   border: 1px solid var(--border);
 }

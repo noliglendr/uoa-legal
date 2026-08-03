@@ -3,7 +3,7 @@ module.exports = {
   url: "https://uoalegal.com",
   tagline: "Strategic legal counsel for businesses making bold decisions.",
   disclaimer:
-    "Every matter is different; past results do not guarantee future outcomes.",
+    "Attorney Advertising. Prior results do not guarantee a similar outcome. This website is for informational purposes only and does not constitute legal advice. Viewing this site or contacting UOA Legal does not create an attorney-client relationship. Please do not send confidential information until an engagement has been confirmed in writing. UOA Legal practices law in jurisdictions where its attorneys are licensed, including New York and Texas.",
   email: "contact@uoalegal.com",
   phone: "(347) 291-4713",
   phoneHref: "tel:+13472914713",
@@ -18,7 +18,7 @@ module.exports = {
       lines: ["6160 Warren Parkway, Suite 100", "Frisco, TX 75034"],
     },
   ],
-  locations: ["New York, NY", "Virtual Consultations"],
+  locations: ["New York, NY", "Frisco, TX", "Virtual Consultations"],
   // TODO: replace with a real Formspree form ID before go-live.
   formspreeId: "YOUR_FORM_ID",
 };
