@@ -13,14 +13,14 @@ navCurrent: contact
   </div>
 </header>
 
-<section>
+<section class="section">
   <div class="wrap">
     <div class="contact-grid">
       <div class="contact-info">
-        <p class="serif contact-lead">The consultation is where strategy begins. Not after you've retained us — at the first conversation.</p>
-        <p>Tell us about your matter. We'll tell you honestly whether we're the right firm for it — and if we are, how we'd approach it.</p>
+        <p class="contact-lead">The consultation is where strategy begins. Not after you've retained us — at the first conversation.</p>
+        <p class="contact-intro">Tell us about your matter. We'll tell you honestly whether we're the right firm for it — and if we are, how we'd approach it.</p>
 
-        <div style="margin-top:32px;">
+        <div class="contact-details">
           {% for office in site.offices %}
           <div class="contact-detail"><strong>{{ office.label }}</strong>{% for line in office.lines %}{{ line }}{% if not loop.last %}<br />{% endif %}{% endfor %}</div>
           {% endfor %}
